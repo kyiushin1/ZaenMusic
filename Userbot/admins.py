@@ -14,12 +14,12 @@ async def skip(client, m: Message):
     if len(m.command) < 2:
         op = await skip_current_song(chat_id)
         if op == 0:
-            await m.reply("**❌ Tidak ada apapun didalam antrian untuk dilewati!**")
+            await m.reply("**❌ There's nothing to skip!**")
         elif op == 1:
-            await m.reply("Antrian Kosong, Meninggalkan Obrolan Suara**")
+            await m.reply("**🏃 I run away, chuuuuaak**")
         else:
             await m.reply(
-                f"**⏭ Melewati pemutaran** \n**🎵 Sekarang memutar** - [{op[0]}]({op[1]}) | `{op[2]}`",
+                f"**⏭ Skipping Song Play** \n**🎵 Now Playing Songs** - [{op[0]}]({op[1]}) | `{op[2]}`",
                 disable_web_page_preview=True,
             )
     else:
@@ -49,7 +49,7 @@ async def stop(client, m: Message):
         try:
             await call_py.leave_group_call(chat_id)
             clear_queue(chat_id)
-            await m.reply("**✅ Mengakhiri pemutaran**")
+            await m.reply("**✅ Turn off the song and run away**")
         except Exception as e:
             await m.reply(f"**ERROR** \n`{e}`")
     else:
