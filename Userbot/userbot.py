@@ -38,7 +38,7 @@ async def ping(client, m: Message):
     uptime_sec = (current_time - START_TIME).total_seconds()
     uptime = await _human_time_duration(int(uptime_sec))
     await m_reply.edit(
-        f"<b>🏓 Pok</b> `{delta_ping * 1000:.3f} ms` \n<b>🚀 "Active</b> - `{uptime}`"
+        f"<b>🏓 FPS</b> `{delta_ping * 1000:.3f} ms` \n<b>🚀 "Active</b> - `{uptime}`"
     )
 
 
@@ -47,16 +47,16 @@ async def ping(client, m: Message):
 )
 async def restart(client, m: Message):
     await m.delete()
-    loli = await m.reply("1")
-    await loli.edit("2")
-    await loli.edit("3")
-    await loli.edit("4")
-    await loli.edit("5")
-    await loli.edit("6")
-    await loli.edit("7")
-    await loli.edit("8")
-    await loli.edit("9")
-    await loli.edit("**✅ Userbot Succes Restart, Wait a minute**")
+    loli = await m.reply("AKI")
+    await loli.edit("SAYANG")
+    await loli.edit("DIA")
+    await loli.edit("TAPI")
+    await loli.edit("KAMU")
+    await loli.edit("MILIH")
+    await loli.edit("DIA")
+    await loli.edit("DARI PADA")
+    await loli.edit("AKU")
+    await loli.edit("**✅ Music Succes Restart, Wait a minute**")
     os.execl(sys.executable, sys.executable, *sys.argv)
     quit()
 
