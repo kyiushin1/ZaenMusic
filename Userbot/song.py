@@ -23,7 +23,7 @@ async def song(client, message: Message):
             "Sintaks Perintah Tidak Valid, Silakan Periksa Menu Bantuan Untuk Tahu Lebih Banyak!",
         )
         return
-    pablo = await client.send_message(message.chat.id, f"**🔎Sedang Mencari Lagu** `{urlissed}`")
+    pablo = await client.send_message(message.chat.id, f"**🔎 Sedang Mencari Lagu** `{urlissed}`")
     search = SearchVideos(f"{urlissed}", offset=1, mode="dict", max_results=1)
     mi = search.result()
     mio = mi["search_result"]
@@ -124,7 +124,7 @@ async def progress(current, total, message, start, type_of_ps, file_name=None):
         time_to_completion = round((total - current) / speed) * 1000
         estimated_total_time = elapsed_time + time_to_completion
         progress_str = "{0}{1} {2}%\n".format(
-            "".join("🔴" for i in range(math.floor(percentage / 10))),
+            "".join("🚀" for i in range(math.floor(percentage / 10))),
             "".join("🔘" for i in range(10 - math.floor(percentage / 10))),
             round(percentage, 2),
         )
