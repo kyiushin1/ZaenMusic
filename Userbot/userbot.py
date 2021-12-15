@@ -33,12 +33,12 @@ async def ping(client, m: Message):
     await m.delete()
     start = time()
     current_time = datetime.utcnow()
-    m_reply = await m.reply_text("🏃")
+    m_reply = await m.reply_text("😎")
     delta_ping = time() - start
     uptime_sec = (current_time - START_TIME).total_seconds()
     uptime = await _human_time_duration(int(uptime_sec))
     await m_reply.edit(
-        f"<b>🏓 PONG</b> `{delta_ping * 1000:.3f} ms` \n<b>⏳ AKTIF</b> - `{uptime}`"
+        f"<b>🏓 Pok</b> `{delta_ping * 1000:.3f} ms` \n<b>🚀 "Active</b> - `{uptime}`"
     )
 
 
@@ -95,7 +95,7 @@ async def repo(client, m: Message):
     REPO = f"""
 <b>👋 Hallo {m.from_user.mention}!
 
-🏃 SETEL LAGU DJ DAN NONTON BOKEP MANTAP 🏃
+🏃 SETEL LAGU DJ DENGAN MUDAH🏃
 
 ☝️ PENCET SAYA DI BAWAH ☝️
 • [RYU-SHIN](https://t.me/Rafens)
