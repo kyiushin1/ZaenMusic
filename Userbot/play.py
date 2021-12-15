@@ -160,7 +160,7 @@ async def play(client, m: Message):
             await m.reply("Balas ke File Audio atau berikan sesuatu untuk Pencarian")
         else:
             await m.delete()
-            huehue = await m.reply("**🏃 Looking for a Song Please Wait...**")
+            huehue = await m.reply("**🎵 Looking for a song please wait...**")
             query = m.text.split(None, 1)[1]
             search = ytsearch(query)
             if search == 0:
