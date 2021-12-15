@@ -56,7 +56,7 @@ async def restart(client, m: Message):
     await loli.edit("7")
     await loli.edit("8")
     await loli.edit("9")
-    await loli.edit("**✅ Userbot Di Restart Ulang**")
+    await loli.edit("**✅ Userbot Succes Restart, Wait a minute**")
     os.execl(sys.executable, sys.executable, *sys.argv)
     quit()
 
@@ -95,26 +95,16 @@ async def repo(client, m: Message):
     REPO = f"""
 <b>👋 Hallo {m.from_user.mention}!
 
-🗃️ Music Dan Video Player UserBot
+🏃 SETEL LAGU DJ DAN NONTON BOKEP MANTAP 🏃
 
-🔰 Telegram UserBot Untuk Memutar Lagu Dan Video Di Obrolan Suara Telegram.
-
-👩‍💻 Dipersembahkan Oleh 
-• [Zaen](https://t.me/Mafia_TobaTZ)
+☝️ PENCET SAYA DI BAWAH ☝️
+• [RYE-SHIN](https://t.me/Rafens)
 
 📝 Persyaratan
-• Python 3.8+
-• FFMPEG
-• Nodejs v16+
+• HARUS GANTENG 🤫
+• KANJUT SEGEDE BADAK 🏃
+• YANG PASTI ANAK EFEF 😬
 
-[Repo Zaen-Music](https://github.com/Zaen-ubot/ZaenMusic)
-
-📝 Variabel Yang Dibutuhkan
-• `API_ID` - Dapatkan Dari [my.telegram.org](https://my.telegram.org)
-• `API_HASH` - Dapatkan Dari [my.telegram.org](https://my.telegram.org)
-• `SESSION` - Sesi String Pyrogram.
-• `SUDO_USER` - ID Akun Telegram Yang Digunakan Sebagai Admin
-• `HNDLR` - Handler untuk menjalankan userbot mu
-
+📝[REPO-SOURCE](https://github.com/Zaen-ubot/ZaenMusic)
 """
     await m.reply(REPO, disable_web_page_preview=True)
