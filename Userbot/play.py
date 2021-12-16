@@ -17,18 +17,11 @@ from config import HNDLR, bot, call_py
 from Userbot.helpers.queues import QUEUE, add_to_queue, get_queue
 
 AMBILFOTO = [
-    "https://telegra.ph/file/0dd880edd91e723de0a54.jpg",
-    "https://telegra.ph/file/0dd880edd91e723de0a54.jpg",
-    "https://telegra.ph/file/0dd880edd91e723de0a54.jpg",
-    "https://telegra.ph/file/0dd880edd91e723de0a54.jpg",
-    "https://telegra.ph/file/0dd880edd91e723de0a54.jpg",
-    "https://telegra.ph/file/0dd880edd91e723de0a54.jpg",
-    "https://telegra.ph/file/0dd880edd91e723de0a54.jpg",
-    "https://telegra.ph/file/0dd880edd91e723de0a54.jpg",
-    "https://telegra.ph/file/0dd880edd91e723de0a54.jpg",
-    "https://telegra.ph/file/0dd880edd91e723de0a54.jpg",
-    "https://telegra.ph/file/0dd880edd91e723de0a54.jpg",
-    "https://telegra.ph/file/0dd880edd91e723de0a54.jpg",
+    "https://telegra.ph/file/048e8be5d2d817d800696.jpg",
+    "https://telegra.ph/file/c1ca6b7e6e79abf0392ae.jpg",
+    "https://telegra.ph/file/b8f4105646c7b173235a1.jpg",
+    "https://telegra.ph/file/5ea52f0601032dfe0e23e.jpg",
+    "https://telegra.ph/file/423001fdba664e2d21b01.jpg",
 ]
 
 IMAGE_THUMBNAIL = random.choice(AMBILFOTO)
@@ -126,7 +119,7 @@ async def play(client, m: Message):
                 await huehue.delete()
                 # await m.reply_to_message.delete()
                 await m.reply_photo(
-                    photo="https://telegra.ph/file/0dd880edd91e723de0a54.jpg",
+                    photo="https://telegra.ph/file/c1ca6b7e6e79abf0392ae.jpg",
                     caption=f"""
 **⏰ Song In Queue {pos}
 🎧 Music: [{songname}]({link})
@@ -146,7 +139,7 @@ async def play(client, m: Message):
                 await huehue.delete()
                 # await m.reply_to_message.delete()
                 await m.reply_photo(
-                    photo="https://telegra.ph/file/0dd880edd91e723de0a54.jpg",
+                    photo="https://telegra.ph/file/b8f4105646c7b173235a1.jpg",
                     caption=f"""
 **🎧 Now Playing Song
 🎵 Music: [{songname}]({link})
@@ -160,7 +153,7 @@ async def play(client, m: Message):
             await m.reply("Balas ke File Audio atau berikan sesuatu untuk Pencarian")
         else:
             await m.delete()
-            huehue = await m.reply("**🎵 Looking for a song please wait...**")
+            huehue = await m.reply("**💡 Looking for a song please wait...**")
             query = m.text.split(None, 1)[1]
             search = ytsearch(query)
             if search == 0:
@@ -285,7 +278,7 @@ async def videoplay(client, m: Message):
             )
         else:
             await m.delete()
-            huehue = await m.reply("**🔎 Looking for the song you want, wait a minute..**")
+            huehue = await m.reply("**💡 Looking for Videos you want, wait a minute..**")
             query = m.text.split(None, 1)[1]
             search = ytsearch(query)
             Q = 720
@@ -374,7 +367,7 @@ async def playfrom(client, m: Message):
                     add_to_queue(chat_id, songname, location, link, "Audio", 0)
                     # await m.reply_to_message.delete()
                     await m.reply_photo(
-                        photo="https://telegra.ph/file/0dd880edd91e723de0a54.jpg",
+                        photo="https://telegra.ph/file/5ea52f0601032dfe0e23e.jpg",
                         caption=f"""
 **• Start Playing Songs From {chat}
 🎵 Music: [{songname}]({link})
