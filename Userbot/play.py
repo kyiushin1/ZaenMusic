@@ -174,6 +174,7 @@ async def play(client, m: Message):
                         await m.reply_photo(
                             photo=f"{IMAGE_THUMBNAIL}",
                             caption=f"""
+
 **💡 Song In Queue » {pos}
 🏷️ Name: [{songname}]({url})
 📝 Chat ID: {chat_id}
@@ -242,6 +243,7 @@ async def videoplay(client, m: Message):
                 await m.reply_photo(
                     photo="https://telegra.ph/file/375eab938d8ead2cc9750.jpg",
                     caption=f"""
+
 **💡 Videos Queue » {pos}
 🏷️ Name: [{songname}]({link})
 📝 Chat ID: {chat_id}
@@ -266,6 +268,7 @@ async def videoplay(client, m: Message):
                 await m.reply_photo(
                     photo="https://telegra.ph/file/375eab938d8ead2cc9750.jpg",
                     caption=f"""
+
 **»💡Starting Video 
 🏷️ Name: [{songname}]({link})
 📝 Chat ID: {chat_id}
@@ -303,6 +306,7 @@ async def videoplay(client, m: Message):
                         await m.reply_photo(
                             photo=f"{IMAGE_THUMBNAIL}",
                             caption=f"""
+
 **»💡 Videos In Queue
 🏷️ Name: [{songname}]({url})
 📝 Chat ID: {chat_id}
@@ -322,6 +326,7 @@ async def videoplay(client, m: Message):
                             await m.reply_photo(
                                 photo=f"{IMAGE_THUMBNAIL}",
                                 caption=f"""
+
 **»💡 Start Playing Video
 🏷️ Name: [{songname}]({url})
 📝 Chat ID: {chat_id}
@@ -371,6 +376,7 @@ async def playfrom(client, m: Message):
                     await m.reply_photo(
                         photo="https://telegra.ph/file/375eab938d8ead2cc9750.jpg",
                         caption=f"""
+
 **»💡 Playing Song From {chat}
 🏷️ Music: [{songname}]({link})
 📝 Chat ID: {chat_id}
