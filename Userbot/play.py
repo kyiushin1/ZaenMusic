@@ -17,11 +17,11 @@ from config import HNDLR, bot, call_py
 from Userbot.helpers.queues import QUEUE, add_to_queue, get_queue
 
 AMBILFOTO = [
-    "https://telegra.ph/file/048e8be5d2d817d800696.jpg",
-    "https://telegra.ph/file/c1ca6b7e6e79abf0392ae.jpg",
-    "https://telegra.ph/file/b8f4105646c7b173235a1.jpg",
-    "https://telegra.ph/file/5ea52f0601032dfe0e23e.jpg",
-    "https://telegra.ph/file/423001fdba664e2d21b01.jpg",
+    "https://telegra.ph/file/375eab938d8ead2cc9750.jpg",
+    "https://telegra.ph/file/375eab938d8ead2cc9750.jpg",
+    "https://telegra.ph/file/375eab938d8ead2cc9750.jpg",
+    "https://telegra.ph/file/375eab938d8ead2cc9750.jpg",
+    "https://telegra.ph/file/375eab938d8ead2cc9750.jpg",
 ]
 
 IMAGE_THUMBNAIL = random.choice(AMBILFOTO)
@@ -104,7 +104,7 @@ async def play(client, m: Message):
     if replied:
         if replied.audio or replied.voice:
             await m.delete()
-            huehue = await replied.reply("**✧ Memproses Request..**")
+            huehue = await replied.reply("**💡 Memproses Request..**")
             dl = await replied.download()
             link = replied.link
             if replied.audio:
@@ -119,7 +119,7 @@ async def play(client, m: Message):
                 await huehue.delete()
                 # await m.reply_to_message.delete()
                 await m.reply_photo(
-                    photo="https://telegra.ph/file/c1ca6b7e6e79abf0392ae.jpg",
+                    photo="https://telegra.ph/file/375eab938d8ead2cc9750.jpg",
                     caption=f"""
 **💡 Song In Queue » {pos}
 🏷️ Name: [{songname}]({link})
@@ -139,7 +139,7 @@ async def play(client, m: Message):
                 await huehue.delete()
                 # await m.reply_to_message.delete()
                 await m.reply_photo(
-                    photo="https://telegra.ph/file/b8f4105646c7b173235a1.jpg",
+                    photo="https://telegra.ph/file/375eab938d8ead2cc9750.jpg",
                     caption=f"""
 **» 💡 Now Playing Song 
 🏷️ Name: [{songname}]({link})
@@ -211,7 +211,7 @@ async def videoplay(client, m: Message):
     if replied:
         if replied.video or replied.document:
             await m.delete()
-            huehue = await replied.reply("**✧ Memproses Video....**")
+            huehue = await replied.reply("**💡 Memproses Video....**")
             dl = await replied.download()
             link = replied.link
             if len(m.command) < 2:
@@ -238,7 +238,7 @@ async def videoplay(client, m: Message):
                 await huehue.delete()
                 # await m.reply_to_message.delete()
                 await m.reply_photo(
-                    photo="https://telegra.ph/file/5ea52f0601032dfe0e23e.jpg",
+                    photo="https://telegra.ph/file/375eab938d8ead2cc9750.jpg",
                     caption=f"""
 **💡 Videos Queue » {pos}
 🏷️ Name: [{songname}]({link})
@@ -262,7 +262,7 @@ async def videoplay(client, m: Message):
                 await huehue.delete()
                 # await m.reply_to_message.delete()
                 await m.reply_photo(
-                    photo="https://telegra.ph/file/c1ca6b7e6e79abf0392ae.jpg",
+                    photo="https://telegra.ph/file/375eab938d8ead2cc9750.jpg",
                     caption=f"""
 **»💡Starting Video 
 🏷️ Name: [{songname}]({link})
@@ -367,9 +367,9 @@ async def playfrom(client, m: Message):
                     add_to_queue(chat_id, songname, location, link, "Audio", 0)
                     # await m.reply_to_message.delete()
                     await m.reply_photo(
-                        photo="https://telegra.ph/file/5ea52f0601032dfe0e23e.jpg",
+                        photo="https://telegra.ph/file/375eab938d8ead2cc9750.jpg",
                         caption=f"""
-**»💡 Playing Songs From {chat}
+**»💡 Playing Song From {chat}
 🏷️ Music: [{songname}]({link})
 📝 Chat ID: {chat_id}
 🎧 Request: {m.from_user.mention}**
