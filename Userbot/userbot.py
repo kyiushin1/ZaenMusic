@@ -33,7 +33,7 @@ async def ping(client, m: Message):
     await m.delete()
     start = time()
     current_time = datetime.utcnow()
-    m_reply = await m.reply_text("😎")
+    m_reply = await m.reply_text("🚀")
     delta_ping = time() - start
     uptime_sec = (current_time - START_TIME).total_seconds()
     uptime = await _human_time_duration(int(uptime_sec))
@@ -47,16 +47,16 @@ async def ping(client, m: Message):
 )
 async def restart(client, m: Message):
     await m.delete()
-    loli = await m.reply("AKI")
-    await loli.edit("SAYANG")
-    await loli.edit("DIA")
-    await loli.edit("TAPI")
-    await loli.edit("KAMU")
-    await loli.edit("MILIH")
-    await loli.edit("DIA")
-    await loli.edit("DARI PADA")
-    await loli.edit("AKU")
-    await loli.edit("**✅ Music Succes Restart, Wait a minute**")
+    loli = await m.reply("MUSIC")
+    await loli.edit("SEDANG")
+    await loli.edit("ME-RESTART")
+    await loli.edit("MOHON")
+    await loli.edit("DI TUNGGU")
+    await loli.edit("SEBENTAR")
+    await loli.edit("1")
+    await loli.edit("2")
+    await loli.edit("3")
+    await loli.edit("**✅ Music Succes Restart**")
     os.execl(sys.executable, sys.executable, *sys.argv)
     quit()
 
@@ -96,6 +96,8 @@ async def repo(client, m: Message):
 <b>👋 Hallo {m.from_user.mention}!
 
 🏃 SETEL LAGU DJ DENGAN MUDAH🏃
+
+🚀 • [JOIN GROUPS ME](https://t.me/CariKenalanBebas)
 
 ☝️ PENCET SAYA DI BAWAH ☝️
 • [RYU-SHIN](https://t.me/Rafens)
