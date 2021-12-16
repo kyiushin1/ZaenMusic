@@ -121,10 +121,10 @@ async def play(client, m: Message):
                 await m.reply_photo(
                     photo="https://telegra.ph/file/c1ca6b7e6e79abf0392ae.jpg",
                     caption=f"""
-**⏰ Song In Queue {pos}
-🎧 Music: [{songname}]({link})
-⚙️ Chat ID: {chat_id}
-🏃 Request: {m.from_user.mention}**
+**💡 Song In Queue » {pos}
+🏷️ Name: [{songname}]({link})
+📝 Chat ID: {chat_id}
+🎧 Request: {m.from_user.mention}**
 """,
                 )
             else:
@@ -141,10 +141,10 @@ async def play(client, m: Message):
                 await m.reply_photo(
                     photo="https://telegra.ph/file/b8f4105646c7b173235a1.jpg",
                     caption=f"""
-**🎧 Now Playing Song
-🎵 Music: [{songname}]({link})
-⚙️ Chat ID: {chat_id}
-🏃 Request: {m.from_user.mention}**
+**» 💡 Now Playing Song 
+🏷️ Name: [{songname}]({link})
+📝 Chat ID: {chat_id}
+🎧 Request: {m.from_user.mention}**
 """,
                 )
 
@@ -153,7 +153,7 @@ async def play(client, m: Message):
             await m.reply("Balas ke File Audio atau berikan sesuatu untuk Pencarian")
         else:
             await m.delete()
-            huehue = await m.reply("**💡 Looking for a song please wait...**")
+            huehue = await m.reply("**»💡 Looking for a song...**")
             query = m.text.split(None, 1)[1]
             search = ytsearch(query)
             if search == 0:
@@ -172,10 +172,10 @@ async def play(client, m: Message):
                         await m.reply_photo(
                             photo=f"{IMAGE_THUMBNAIL}",
                             caption=f"""
-**⏰ Song In Queue {pos}
-🎵 Music: [{songname}]({url})
-⚙️ Chat ID: {chat_id}
-🏃 Request: {m.from_user.mention}**
+**💡 Song In Queue » {pos}
+🏷️ Name: [{songname}]({url})
+📝 Chat ID: {chat_id}
+🎧 Request: {m.from_user.mention}**
 """,
                         )
                     else:
@@ -193,10 +193,10 @@ async def play(client, m: Message):
                             await m.reply_photo(
                                 photo=f"{IMAGE_THUMBNAIL}",
                                 caption=f"""
-**🎧 Start Playing Song
-🎵 Music: [{songname}]({url})
-⚙️ Chat ID: {chat_id}
-🏃 Request: {m.from_user.mention}**
+**»💡 Playing Song
+🏷️ Name: [{songname}]({url})
+📝 Chat ID: {chat_id}
+🎧 Request: {m.from_user.mention}**
 """,
                             )
                         except Exception as ep:
@@ -238,12 +238,12 @@ async def videoplay(client, m: Message):
                 await huehue.delete()
                 # await m.reply_to_message.delete()
                 await m.reply_photo(
-                    photo="https://telegra.ph/file/0dd880edd91e723de0a54.jpg",
+                    photo="https://telegra.ph/file/5ea52f0601032dfe0e23e.jpg",
                     caption=f"""
-**⏰ Videos In Queue {pos}
-🎞️ Title: [{songname}]({link})
-⚙️ Chat ID: {chat_id}
-🏃 Request: {m.from_user.mention}**
+**💡 Videos Queue » {pos}
+🏷️ Name: [{songname}]({link})
+📝 Chat ID: {chat_id}
+🎧 Request: {m.from_user.mention}**
 """,
                 )
             else:
@@ -262,12 +262,12 @@ async def videoplay(client, m: Message):
                 await huehue.delete()
                 # await m.reply_to_message.delete()
                 await m.reply_photo(
-                    photo="https://telegra.ph/file/0dd880edd91e723de0a54.jpg",
+                    photo="https://telegra.ph/file/c1ca6b7e6e79abf0392ae.jpg",
                     caption=f"""
-** • Starting Video •
-🎞️ Title: [{songname}]({link})
-⚙️ Chat ID: {chat_id}
-🏃 Request: {m.from_user.mention}**
+**»💡Starting Video 
+🏷️ Name: [{songname}]({link})
+📝 Chat ID: {chat_id}
+🎧 Request: {m.from_user.mention}**
 """,
                 )
 
@@ -278,7 +278,7 @@ async def videoplay(client, m: Message):
             )
         else:
             await m.delete()
-            huehue = await m.reply("**💡 Looking for Videos you want, wait a minute..**")
+            huehue = await m.reply("**»💡 Looking for Videos you want**")
             query = m.text.split(None, 1)[1]
             search = ytsearch(query)
             Q = 720
@@ -301,10 +301,10 @@ async def videoplay(client, m: Message):
                         await m.reply_photo(
                             photo=f"{IMAGE_THUMBNAIL}",
                             caption=f"""
-**⏰ Videos In Queue
-🎞️ Title: [{songname}]({url})
-⚙️ Chat ID: {chat_id}
-🏃 Request: {m.from_user.mention}**
+**»💡 Videos In Queue
+🏷️ Name: [{songname}]({url})
+📝 Chat ID: {chat_id}
+🎧 Request: {m.from_user.mention}**
 """,
                         )
                     else:
@@ -320,10 +320,10 @@ async def videoplay(client, m: Message):
                             await m.reply_photo(
                                 photo=f"{IMAGE_THUMBNAIL}",
                                 caption=f"""
-**• Start Playing Video •
-🎞️ Title: [{songname}]({url})
-⚙️ Chat ID: {chat_id}
-🏃 Request: {m.from_user.mention}**
+**»💡 Start Playing Video
+🏷️ Name: [{songname}]({url})
+📝 Chat ID: {chat_id}
+🎧 Request: {m.from_user.mention}**
 """,
                             )
                         except Exception as ep:
@@ -369,10 +369,10 @@ async def playfrom(client, m: Message):
                     await m.reply_photo(
                         photo="https://telegra.ph/file/5ea52f0601032dfe0e23e.jpg",
                         caption=f"""
-**• Start Playing Songs From {chat}
-🎵 Music: [{songname}]({link})
-⚙️ Chat ID: {chat_id}
-🏃 Request: {m.from_user.mention}**
+**»💡 Playing Songs From {chat}
+🏷️ Music: [{songname}]({link})
+📝 Chat ID: {chat_id}
+🎧 Request: {m.from_user.mention}**
 """,
                     )
             await hmm.delete()
