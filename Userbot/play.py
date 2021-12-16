@@ -142,6 +142,7 @@ async def play(client, m: Message):
                 await m.reply_photo(
                     photo="https://telegra.ph/file/375eab938d8ead2cc9750.jpg",
                     caption=f"""
+
 **» 💡 Now Playing Song 
 🏷️ Name: [{songname}]({link})
 📝 Chat ID: {chat_id}
