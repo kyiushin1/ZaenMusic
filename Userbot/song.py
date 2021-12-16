@@ -62,8 +62,8 @@ async def song(client, message: Message):
         return
     c_time = time.time()
     capy = f"""
-**🎧 Name Music:** [{thum}]({mo})
-**🏃 Request:** {message.from_user.mention}
+**🏷️ Name:** [{thum}]({mo})
+**🎧 Request:** {message.from_user.mention}
 """
     file_stark = f"{ytdl_data['id']}.mp3"
     await client.send_audio(
@@ -78,7 +78,7 @@ async def song(client, message: Message):
         progress_args=(
             pablo,
             c_time,
-            f"**⏳ Downloading the song you want..** `{urlissed}`",
+            f"**🏃 Downloading the song you want..** `{urlissed}`",
             file_stark,
         ),
     )
@@ -124,7 +124,7 @@ async def progress(current, total, message, start, type_of_ps, file_name=None):
         time_to_completion = round((total - current) / speed) * 1000
         estimated_total_time = elapsed_time + time_to_completion
         progress_str = "{0}{1} {2}%\n".format(
-            "".join("🚀" for i in range(math.floor(percentage / 10))),
+            "".join("🤫" for i in range(math.floor(percentage / 10))),
             "".join("🔘" for i in range(10 - math.floor(percentage / 10))),
             round(percentage, 2),
         )
@@ -271,8 +271,8 @@ async def vsong(client, message: Message):
     c_time = time.time()
     file_stark = f"{ytdl_data['id']}.mp4"
     capy = f"""
-**🎞️ Videos Name:** [{thum}]({mo})
-**🏃 Request:** {message.from_user.mention}
+**🏷️ Videos Name:** [{thum}]({mo})
+**💡 Request:** {message.from_user.mention}
 """
     await client.send_video(
         message.chat.id,
@@ -286,7 +286,7 @@ async def vsong(client, message: Message):
         progress_args=(
             pablo,
             c_time,
-            f"**⏳ Downloading Porn For You** `{urlissed}`",
+            f"**🏃 Downloading Porn For You** `{urlissed}`",
             file_stark,
         ),
     )
