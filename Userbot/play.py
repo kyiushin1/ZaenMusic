@@ -155,7 +155,7 @@ async def play(client, m: Message):
             await m.reply("Balas ke File Audio atau berikan sesuatu untuk Pencarian")
         else:
             await m.delete()
-            huehue = await m.reply("**»💡 Looking for a song...**")
+            huehue = await m.reply("**»💡 Song Search...**")
             query = m.text.split(None, 1)[1]
             search = ytsearch(query)
             if search == 0:
@@ -269,7 +269,7 @@ async def videoplay(client, m: Message):
                     photo="https://telegra.ph/file/375eab938d8ead2cc9750.jpg",
                     caption=f"""
 
-**»💡Starting Video 
+**»💡 Starting Video 
 🏷️ Name: [{songname}]({link})
 📝 Chat ID: {chat_id}
 🎧 Request: {m.from_user.mention}**
@@ -283,7 +283,7 @@ async def videoplay(client, m: Message):
             )
         else:
             await m.delete()
-            huehue = await m.reply("**»💡 Looking for Videos you want**")
+            huehue = await m.reply("**»💡 Video Search**")
             query = m.text.split(None, 1)[1]
             search = ytsearch(query)
             Q = 720
